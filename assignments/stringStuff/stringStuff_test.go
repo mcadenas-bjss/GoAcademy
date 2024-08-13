@@ -1,22 +1,22 @@
-package workingWithStrings_test
+package stringStuff_test
 
 import (
 	"fmt"
 	"testing"
 
-	"github.com/mcadenas-bjss/GoAcademy/assignments/workingWithStrings"
+	"github.com/mcadenas-bjss/GoAcademy/assignments/stringStuff"
 )
 
 func TestConcatenateStrings(t *testing.T) {
 	t.Run("returns one string from all arguments", func(t *testing.T) {
-		actual := workingWithStrings.ConcatenateStrings("fizz", "buzz")
+		actual := stringStuff.ConcatenateStrings("fizz", "buzz")
 		expected := "fizzbuzz"
 
 		expectStringEquals(t, actual, expected)
 	})
 
 	t.Run("returns empty string when no arguments", func(t *testing.T) {
-		actual := workingWithStrings.ConcatenateStrings()
+		actual := stringStuff.ConcatenateStrings()
 		expected := ""
 
 		expectStringEquals(t, actual, expected)
@@ -32,7 +32,7 @@ func expectStringEquals(t testing.TB, actual, expected string) {
 }
 
 func ExampleConcatenateStrings() {
-	result := workingWithStrings.ConcatenateStrings("fizz", "buzz")
+	result := stringStuff.ConcatenateStrings("fizz", "buzz")
 	fmt.Println(result)
 	// Output: fizzbuzz
 }

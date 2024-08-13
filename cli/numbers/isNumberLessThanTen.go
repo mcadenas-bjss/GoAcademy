@@ -3,7 +3,7 @@ package main
 import (
 	"flag"
 
-	"github.com/mcadenas-bjss/GoAcademy/assignments/workingWithInts"
+	"github.com/mcadenas-bjss/GoAcademy/assignments/numberStuff"
 	"github.com/mcadenas-bjss/GoAcademy/utils"
 )
 
@@ -17,7 +17,7 @@ func main() {
 		n = utils.IntPrompt("Enter a number")
 	}
 
-	if workingWithInts.IsIntBetweenOneAndTen(n) {
+	if numberStuff.IsIntBetweenOneAndTen(n) {
 		println("Yes")
 	} else {
 		println("No")

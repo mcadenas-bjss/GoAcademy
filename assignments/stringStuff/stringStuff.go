@@ -1,4 +1,4 @@
-package workingWithStrings
+package stringStuff
 
 // ConcatenateStrings concatenates all string arguments passed in.
 func ConcatenateStrings(args ...string) string {
