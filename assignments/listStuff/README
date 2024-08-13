@@ -1,0 +1,5 @@
+Create a program that initialises an array with the integer values 1 to 10: [Arrays][Slices][For Loops]
+ 1. Display the array content in ascending sequential order 1 to 10.
+ 2. Display the array content in descending sequential order 10 to 1.
+ 3. Count even numbers and odd numbers in increasing and decreasing sequential order.
+ 4. Display the even and odd count sequences to screen.
