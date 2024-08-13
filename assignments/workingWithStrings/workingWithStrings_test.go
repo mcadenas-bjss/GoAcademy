@@ -1,6 +1,7 @@
 package workingWithStrings_test
 
 import (
+	"fmt"
 	"testing"
 
 	"github.com/mcadenas-bjss/GoAcademy/assignments/workingWithStrings"
@@ -28,4 +29,10 @@ func expectStringEquals(t testing.TB, actual, expected string) {
 	if actual != expected {
 		t.Errorf("Expected %q but got %q", expected, actual)
 	}
+}
+
+func ExampleConcatenateStrings() {
+	result := workingWithStrings.ConcatenateStrings("fizz", "buzz")
+	fmt.Println(result)
+	// Output: fizzbuzz
 }

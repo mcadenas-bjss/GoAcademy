@@ -3,6 +3,8 @@ package main
 import (
 	"flag"
 	"fmt"
+
+	"github.com/mcadenas-bjss/GoAcademy/utils"
 )
 
 // This uses the package workingWithStrings and the function ConcatenateStrings.
@@ -15,6 +17,13 @@ func main() {
 	flag.StringVar(&last, "last", "", "Last name")
 
 	flag.Parse()
+
+	if len(flag.Args()) < 1 {
+		first = utils.StringPrompt("Enter your first name:")
+		middle = utils.StringPrompt("Enter your middle name:")
+		last = utils.StringPrompt("Enter your last name:")
+
+	}
 
 	// Print the result
 	fmt.Printf("%s %s %s", first, middle, last)
