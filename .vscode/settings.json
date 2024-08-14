@@ -1,0 +1,5 @@
+{
+  "triggerTaskOnSave.tasks": {
+    "go: test package": ["*_test.go"]
+  }
+}
