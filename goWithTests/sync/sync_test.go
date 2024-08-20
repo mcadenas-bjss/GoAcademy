@@ -7,13 +7,13 @@ import (
 
 func TestCounter(t *testing.T) {
 	t.Run("incrementing counter 3 times leaves counter at 3", func(t *testing.T) {
-		// counter := NewCounter()
-		counter := Counter{}
+		// counter := NewCounter() // Don't like
+		counter := &Counter{} // Better
 		counter.Inc()
 		counter.Inc()
 		counter.Inc()
 
-		assertCounter(t, &counter, 3)
+		assertCounter(t, counter, 3)
 	})
 
 	t.Run("it runs concurrently", func(t *testing.T) {
