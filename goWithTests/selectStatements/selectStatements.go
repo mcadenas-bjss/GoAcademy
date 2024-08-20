@@ -1,4 +1,4 @@
-package synchronizeProc
+package selectStatements
 
 import (
 	"fmt"
